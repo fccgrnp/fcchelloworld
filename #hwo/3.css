@@ -1,0 +1,249 @@
+body {
+  padding: 2em;
+  background-image: url(file:///C:/%23hwo/abstrakter-gruener-grunge-hintergrund_24972-283.jpg);
+  background-size: cover;
+}
+#title {
+  font-weight: bolder;
+  text-align: center;
+  color: greenyellow;
+  position: sticky;
+  top: 0;
+  background-color: black;
+}
+
+.stage {
+  display: flex;
+  height: 0px;
+  width: 100%;
+}
+#description {
+  color: greenyellow;
+}
+.bounce-1 {
+  animation-name: bounce-1;
+  animation-timing-function: linear;
+}
+@keyframes bounce-1 {
+  0% {
+    transform: translateX(670px);
+  }
+  50% {
+    transform: translateX(-650px);
+  }
+  100% {
+    transform: translateX(670px);
+  }
+}
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  margin: 0 auto 0 auto;
+  border-bottom: 5px solid greenyellow;
+  align-self: flex-end;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  margin: 0 auto 0 auto;
+  border-top: 5px solid greenyellow;
+  align-self: flex-end;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+a {
+  color: greenyellow;
+  text-decoration: none;
+}
+a:active {
+  color: black;
+}
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: right;
+  width: 96%;
+  height: 96%;
+
+  margin: 30px;
+  padding: 5px;
+}
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+  margin: 5px;
+}
+.aside-1 {
+  text-align: left;
+  color: greenyellow;
+}
+
+.aside-2 {
+  color: greenyellow;
+}
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1 0 0;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .main {
+    flex: 3 0px;
+  }
+  .aside-1 {
+    order: 1;
+  }
+  .main {
+    order: 2;
+  }
+  .aside-2 {
+    order: 3;
+  }
+  .footer {
+    order: 4;
+  }
+}
+.tab1 {
+  display: inline-block;
+  margin-right: 40px;
+}
+#survey-form {
+  border-color: greenyellow;
+  width: 400px;
+  border-radius: 25px;
+}
+#submit {
+  width: 30%;
+
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  background-color: greenyellow;
+  color: black;
+  width: 30%;
+}
+#submit:hover {
+  background-color: black;
+  color: greenyellow;
+  text-align: center;
+  width: 30%;
+}
+#name {
+  background-color: greenyellow;
+  color: black;
+  width: 400px;
+  border: double greenyellow;
+  border-radius: 10px;
+}
+#email {
+  background-color: greenyellow;
+  color: black;
+  width: 400px;
+  border: double greenyellow;
+  border-radius: 10px;
+}
+
+#number {
+  background-color: greenyellow;
+  color: black;
+  width: 400px;
+  border: double greenyellow;
+  border-radius: 10px;
+}
+
+#name-label {
+  color: greenyellow;
+}
+
+#number-label {
+  color: greenyellow;
+}
+#email-label {
+  color: greenyellow;
+}
+#dropdown {
+  color: black;
+  width: 410px;
+
+  background: greenyellow;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#answer {
+  color: greenyellow;
+}
+
+#round_corners {
+  border-radius: 25px;
+}
+.checkbox {
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox > span {
+  color: greenyellow;
+}
+
+.checkbox > input {
+  height: 15px;
+  width: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+
+  border-radius: 8px;
+  outline: none;
+  transition-duration: 0.3s;
+  background-color: greenyellow;
+  cursor: pointer;
+}
+
+.checkbox > input:checked {
+  border: 1px solid greenyellow;
+  background-color: black;
+}
+.radio {
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.radio > span {
+  color: greenyellow;
+}
+
+.radio > input {
+  height: 15px;
+  width: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+
+  border-radius: 15px;
+  outline: none;
+  transition-duration: 0.3s;
+  background-color: greenyellow;
+  cursor: pointer;
+}
+
+.radio > input:checked {
+  border: 1px solid greenyellow;
+  background-color: black;
+}

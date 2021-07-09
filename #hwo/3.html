@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>survey_form</title>
+    <link rel="stylesheet" href="file:///C:/%23hwo/3.css" />
+</head>
+
+<body>
+    <div id="title">
+        <h1>
+            <hr color="greenyellow">Hello <s>World</s> Registration
+            <hr color="greenyellow">
+        </h1>
+    </div>
+    <form id="form">
+        <div id="description">
+            <p>
+                <hr color="greenyellow"><span class="tab1"></span>Aliquam elementum vulputate lacus. Quisque tortor ex,
+                tempor sed lobortis sit amet, posuere id mauris. Proin accumsan dapibus ultricies. Aliquam erat
+                volutpat. In hac habitasse platea dictumst. Aenean et nunc lectus. Aliquam tristique metus ac odio
+                malesuada viverra. Nam at nibh eget sem efficitur dapibus ac vel nibh. Vivamus dignissim nisl orci, eget
+                rhoncus neque accumsan a. Duis in ipsum in nunc ullamcorper pretium et vel massa. Sed gravida fermentum
+                pretium. Nulla imperdiet in nibh sit amet luctus. Integer mattis eleifend mauris, vel vehicula dui porta
+                ac. Etiam eros dui, pulvinar sed elit eu, mattis laoreet orci. Vestibulum imperdiet tempus ante, vitae
+                vulputate velit fringilla quis.
+            </p>
+        </div>
+        <hr color="greenyellow"><br>
+        <div id="survey-form">
+            <p id="name-label">name</p>
+            <div><input type="text" id="name" name="name" placeholder="nickname"></div>
+            <p id="number-label">phone_number</p>
+            <div><input type="text" id="number" name="name" pattern="[0-9]{4}[0-9]{3}[0-9]{4}"
+                    title="invalid_phone_number" required placeholder="00123456789"></div>
+            <p id="email-label">email_adress</p>
+            <div><input type="text" id="email"
+                    pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" size="30" required
+                    title="invalid_email_adress" name="name" placeholder="nick@email.domain"></div>
+            <p id="description">if_you_have_something_to_tell...</p>
+            <textarea id="name" name="subject" placeholder="...dont_keep_it_in_yoursef..."
+                style="height: 300px;"></textarea>
+            <div><br><br>
+                <p id="description">?</p>
+                <select id="dropdown" name="what_to_eat">
+                    <option value="!"></option>
+                    <option value="!!">!</option>
+                    <option value="!!!">!!!</option>
+                    <option value="?!">?!</option>
+                    <option value="...">...</option>
+                </select>
+            </div><br>
+            <div id="answer">
+                <p>pick_one</p>
+                <div class="backgroundradio">
+                    <label class="radio"><input type="radio" name="least">a</label><br>
+                    <label class="radio"><input type="radio" name="least">b</label><br>
+                    <label class="radio"><input type="radio" name="least">c</label><br>
+                    <label class="radio"><input type="radio" name="least">can't_decide</label><br><br>
+                </div>
+                <p>pick_more</p>
+                <div class="backgroundcheck">
+                    <label class="checkbox"><input type="checkbox" name="surviving" value="1">1</label><br>
+                    <label class="checkbox"><input type="checkbox" name="surviving" value="2">2</label><br>
+                    <label class="checkbox"><input type="checkbox" name="surviving" value="3">3</label><br>
+                    <label class="checkbox"><input type="checkbox" name="surviving" value="4">4</label><br>
+                    <label class="checkbox"><input type="checkbox" name="surviving" value="5">5</label><br>
+                    <label class="checkbox"><input type="checkbox" name="surviving"
+                            value="can_u_belive...">+1</label><br>
+                </div>
+            </div>
+            <br>
+            <br><br><input type="submit" id="submit" value="submit">
+        </div><br>
+    </form>
+    <hr color="greenyellow">
+    <div class="arrow-down bounce-1"></div>
+    </div>
+    <div class="wrapper">
+
+        <aside class="aside aside-1"><a href="file:///C:/%23hwo/2.html" target="">home</a></aside>
+        <aside class="aside aside-1"><a href="file:///C:/%23hwo/5.html" target="">nothing_intresting</a></aside>
+        <aside class="aside aside-2"><a href="file:///C:/%23hwo/4.html" target="">nothing_to_sell</a></aside>
+        <aside class="aside aside-2"><a href="https://www.freecodecamp.org/granpa" target="">cont@ct</a></aside>
+
+    </div>
+    <div class="stage">
+        <div class="arrow-up bounce-1"></div>
+    </div>
+    <hr color="greenyellow">
+
+</body>
